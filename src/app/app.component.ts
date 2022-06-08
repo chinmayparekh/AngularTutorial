@@ -17,4 +17,9 @@ export class AppComponent {
   }
   arr=[1,2,3,4,5]
   siteUrl = window.location.href
+  current=""
+  getValue(value){
+    console.log(value);
+    this.current=value;
+  }
 }

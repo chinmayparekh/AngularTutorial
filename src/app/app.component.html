@@ -9,11 +9,16 @@
 <app-login></app-login>
 <app-signup></app-signup> -->
 
-<button (click)="getName(person.name)"> get my name </button>
+<!-- <button (click)="getName(person.name)"> get my name </button>
 <br><br>
-<input type="text" #box  (keyup)="getName(box.value)"/> 
 <input type="text" #box1  (keyup.enter)="getName(box1.value)"/> 
 
 <div style="background-color: aqua;"
   (mouseover)="getName('mouse is hovering')">
-Mouse hover</div>
+Mouse hover</div> -->
+
+<h1>get text box value in angular</h1>
+<input type="text"  #box>
+<button (click)="getValue(box.value)">Get Value</button>
+<h2 >{{current}}</h2>
+
