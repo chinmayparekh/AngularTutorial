@@ -23,4 +23,5 @@ export class AppComponent {
     this.current=value;
   }
   show='yes';
+  color='green';
 }

@@ -1,29 +1,9 @@
-<!-- <h1>Hello world</h1>
-{{person.age}}
-{{getName()}}
-{{arr}}
-{{arr[0]}}
-<h1>{{siteUrl}}</h1>
+<h1>Switch case</h1>
 
-<app-user-list></app-user-list>
-<app-login></app-login>
-<app-signup></app-signup> -->
+<div [ngSwitch]="color">
 
-<!-- <button (click)="getName(person.name)"> get my name </button>
-<br><br>
-<input type="text" #box1  (keyup.enter)="getName(box1.value)"/> 
+  <h2 *ngSwitchCase="'red'">red color</h2>
+  <h2 *ngSwitchCase="'green'">green color</h2>
+  <h2 *ngSwitchCase="'blue'">blue color</h2>
 
-<div style="background-color: aqua;"
-  (mouseover)="getName('mouse is hovering')">
-Mouse hover</div> -->
-
-<!-- <h1>get text box value in angular</h1>
-<input type="text"  #box>
-<button (click)="getValue(box.value)">Get Value</button>
-<h2 >{{current}}</h2> -->
-
-<h1>Conditions</h1>
-<h2 *ngIf="show=='yes'; then ifBlock else elseBlock">
-</h2>
-<ng-template #ifBlock>If true</ng-template>
-<ng-template #elseBlock>If false</ng-template>
+</div>
