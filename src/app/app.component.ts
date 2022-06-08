@@ -22,4 +22,5 @@ export class AppComponent {
     console.log(value);
     this.current=value;
   }
+  show='yes';
 }
