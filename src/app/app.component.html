@@ -1,9 +1,5 @@
-<h1>Switch case</h1>
+<h1>For Loop</h1>
 
-<div [ngSwitch]="color">
-
-  <h2 *ngSwitchCase="'red'">red color</h2>
-  <h2 *ngSwitchCase="'green'">green color</h2>
-  <h2 *ngSwitchCase="'blue'">blue color</h2>
-
-</div>
+<h4 *ngFor="let item of arr">
+  {{item}}
+</h4>
