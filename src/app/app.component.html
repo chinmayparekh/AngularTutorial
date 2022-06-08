@@ -10,3 +10,10 @@
 <app-signup></app-signup> -->
 
 <button (click)="getName(person.name)"> get my name </button>
+<br><br>
+<input type="text" #box  (keyup)="getName(box.value)"/> 
+<input type="text" #box1  (keyup.enter)="getName(box1.value)"/> 
+
+<div style="background-color: aqua;"
+  (mouseover)="getName('mouse is hovering')">
+Mouse hover</div>
