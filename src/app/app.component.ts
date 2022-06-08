@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'blog';
+  getName(name){
+    alert(name)
+    return this.title;
+  }
+  person={
+    name: 'John',
+    age: 36
+  }
+  arr=[1,2,3,4,5]
+  siteUrl = window.location.href
 }
