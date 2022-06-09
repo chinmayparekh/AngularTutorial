@@ -8,13 +8,15 @@ import { FooterComponent } from './footer/footer.component';
 import { UsersComponent } from './users/users.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AdminComponent } from './admin/admin.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     UsersComponent,
-    AdminComponent
+    AdminComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
