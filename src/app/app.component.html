@@ -1,7 +1,11 @@
-<h1>Forms</h1>
+
+<app-header></app-header>
+<h1>Header and Footer</h1>
 
 <form #simpleForm="ngForm" (ngSubmit)="getValue(simpleForm.value)">
   <input type="text" ngModel name="name" placeholder="Enter your name" autocomplete="off"><br><br>
   <input type="password" ngModel name="password" placeholder="Enter your password" autocomplete="off"><br><br>
   <button>Get Value</button>
 </form>
+
+<app-footer></app-footer>
