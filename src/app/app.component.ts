@@ -8,4 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'blog';
   arr=['ram','sham','sita'];
+  getValue(value){
+    console.log(value);
+  }
 }

@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { UserListComponent } from './user-list/user-list.component';
 import {UsersModule} from './users/users.module';
+import {FormsModule} from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -11,7 +12,8 @@ import {UsersModule} from './users/users.module';
   ],
   imports: [
     BrowserModule,
-    UsersModule
+    UsersModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

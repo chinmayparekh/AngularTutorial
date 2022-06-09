@@ -1,5 +1,7 @@
-<h1>For Loop</h1>
+<h1>Forms</h1>
 
-<h4 *ngFor="let item of arr">
-  {{item}}
-</h4>
+<form #simpleForm="ngForm" (ngSubmit)="getValue(simpleForm.value)">
+  <input type="text" ngModel name="name" placeholder="Enter your name" autocomplete="off"><br><br>
+  <input type="password" ngModel name="password" placeholder="Enter your password" autocomplete="off"><br><br>
+  <button>Get Value</button>
+</form>
