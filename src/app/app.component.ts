@@ -11,4 +11,9 @@ export class AppComponent {
   getValue(value){
     console.log(value);
   }
+  color='orange';
+
+  update(){
+    this.color='pink'; 
+  }
 }

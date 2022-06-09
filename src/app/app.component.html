@@ -7,5 +7,8 @@
   <input type="password" ngModel name="password" placeholder="Enter your password" autocomplete="off"><br><br>
   <button>Get Value</button>
 </form>
+<h1 style="color:red">Red</h1>
+<h1 [style.color]="color">Conditional Style</h1>
 
+<button (click)="update()">Update colour</button>
 <app-footer></app-footer>
