@@ -16,5 +16,8 @@ export class AppComponent {
   update(){
     this.color='pink'; 
   }
-  name=['Chinmay','Ram','Sita','Ali','Rohan','Rohit'] 
+  name=['Chinmay','Ram','Sita','Ali','Rohan','Rohit'] ;
+  parentComponent(value){
+    console.log(value);
+  }
 }

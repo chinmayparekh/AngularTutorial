@@ -1,6 +1,6 @@
 
 <app-header></app-header>
-<h1>Passing data from parent to child</h1>
+<h1>Passing data from child to parent</h1>
 
 <form #simpleForm="ngForm" (ngSubmit)="getValue(simpleForm.value)">
   <input type="text" ngModel name="name" placeholder="Enter your name" autocomplete="off"><br><br>
@@ -11,8 +11,10 @@
 <h1 [style.color]="color">Conditional Style</h1>
 
 <button (click)="update()">Update colour</button>
-<div *ngFor="let user of name">
+<!-- <div *ngFor="let user of name">
   <app-users [hero]="user"></app-users>
 
-</div>
+</div> -->
+
+<app-users (call)="parentComponent($event)"></app-users>
 <app-footer></app-footer>

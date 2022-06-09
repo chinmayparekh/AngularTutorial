@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output,EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-users',
@@ -6,10 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./users.component.css']
 })
 export class UsersComponent implements OnInit {
-  @Input() hero
+  @Output() call:EventEmitter<any> = new EventEmitter()
   constructor() { }
-
-  ngOnInit() {
+  ngOnInit() :void{
+    this.call.emit("Chinmay");
   }
 
 }
