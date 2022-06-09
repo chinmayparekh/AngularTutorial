@@ -9,6 +9,7 @@ import { UsersComponent } from './users/users.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AdminComponent } from './admin/admin.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CustomStyleDirective } from './custom-style.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     FooterComponent,
     UsersComponent,
     AdminComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CustomStyleDirective
   ],
   imports: [
     BrowserModule,
