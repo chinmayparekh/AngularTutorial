@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { UsersDataService } from './users-data.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -19,5 +19,10 @@ export class AppComponent {
   name=['Chinmay','Ram','Sita','Ali','Rohan','Rohit'] ;
   parentComponent(value){
     console.log(value);
+  }
+  constructor(private user:UsersDataService){
+    this.user.getData().subscribe(data =>{
+      console.log(data);
+    })
   }
 }
