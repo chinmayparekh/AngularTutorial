@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { UsersDataService } from './users-data.service';
+import {dataType} from './users';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -26,5 +28,13 @@ export class AppComponent {
       console.log(data);
       this.value=data;
     })
+  }
+  getData(){
+    const data:dataType={
+      name:'chin',
+      id:5,
+      indian:true,
+      address:'home'
+    }
   }
 }
