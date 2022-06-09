@@ -16,4 +16,5 @@ export class AppComponent {
   update(){
     this.color='pink'; 
   }
+  name='Chinmay'
 }

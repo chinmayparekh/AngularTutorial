@@ -1,6 +1,6 @@
 
 <app-header></app-header>
-<h1>Header and Footer</h1>
+<h1>Passing data from parent to child</h1>
 
 <form #simpleForm="ngForm" (ngSubmit)="getValue(simpleForm.value)">
   <input type="text" ngModel name="name" placeholder="Enter your name" autocomplete="off"><br><br>
@@ -11,4 +11,6 @@
 <h1 [style.color]="color">Conditional Style</h1>
 
 <button (click)="update()">Update colour</button>
+
+<app-users [hero]="name"></app-users>
 <app-footer></app-footer>
