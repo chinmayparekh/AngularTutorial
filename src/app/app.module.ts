@@ -3,21 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {FormsModule} from '@angular/forms';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { UsersComponent } from './users/users.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AdminComponent } from './admin/admin.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CustomStyleDirective } from './custom-style.directive';
 import { HttpClientModule } from '@angular/common/http';
+import {AdminModule} from './admin/admin.module';
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    UsersComponent,
-    AdminComponent,
     PageNotFoundComponent,
     CustomStyleDirective
   ],
@@ -26,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    AdminModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
