@@ -8,7 +8,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CustomStyleDirective } from './custom-style.directive';
 import { HttpClientModule } from '@angular/common/http';
 import {AdminModule} from './admin/admin.module';
-@NgModule({
+import {UserModule} from './user/user.module';
+@NgModule({ 
   declarations: [
     AppComponent,
     PageNotFoundComponent,
@@ -20,6 +21,8 @@ import {AdminModule} from './admin/admin.module';
     AppRoutingModule,
     HttpClientModule,
     AdminModule,
+    UserModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
