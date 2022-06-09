@@ -1,20 +1,7 @@
-
 <app-header></app-header>
-<h1>Passing data from child to parent</h1>
-
-<form #simpleForm="ngForm" (ngSubmit)="getValue(simpleForm.value)">
-  <input type="text" ngModel name="name" placeholder="Enter your name" autocomplete="off"><br><br>
-  <input type="password" ngModel name="password" placeholder="Enter your password" autocomplete="off"><br><br>
-  <button>Get Value</button>
-</form>
-<h1 style="color:red">Red</h1>
-<h1 [style.color]="color">Conditional Style</h1>
-
-<button (click)="update()">Update colour</button>
-<!-- <div *ngFor="let user of name">
-  <app-users [hero]="user"></app-users>
-
-</div> -->
-
-<app-users (call)="parentComponent($event)"></app-users>
+<h1>Routing</h1>
+<a routerLink="users">Users</a>
+<br /><br /><br />
+<a routerLink="admin">Admin</a>
+<router-outlet></router-outlet>
 <app-footer></app-footer>
