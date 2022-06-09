@@ -20,9 +20,11 @@ export class AppComponent {
   parentComponent(value){
     console.log(value);
   }
+  value=[];
   constructor(private user:UsersDataService){
     this.user.getData().subscribe(data =>{
       console.log(data);
+      this.value=data;
     })
   }
 }
