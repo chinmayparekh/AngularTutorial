@@ -11,6 +11,8 @@
 <h1 [style.color]="color">Conditional Style</h1>
 
 <button (click)="update()">Update colour</button>
+<div *ngFor="let user of name">
+  <app-users [hero]="user"></app-users>
 
-<app-users [hero]="name"></app-users>
+</div>
 <app-footer></app-footer>
