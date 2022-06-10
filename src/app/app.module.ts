@@ -7,12 +7,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CustomStyleDirective } from './custom-style.directive';
 import { HttpClientModule } from '@angular/common/http';
+import { AdminlistComponent } from './adminlist/adminlist.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    CustomStyleDirective
+    CustomStyleDirective,
+    AdminlistComponent,
+    UserListComponent
   ],
   imports: [
     BrowserModule,
